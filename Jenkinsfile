@@ -10,8 +10,8 @@ pipeline {
         stage('docker') {
             steps {
                 sh '''docker info
-                  docker image build -t gopivurata/salore-2-dashboard:DEV .
-                  docker image push gopivurata/salore-2-dashboard:DEV'''
+                  docker image build -t gopivurata/salore:DEV .
+                  docker image push gopivurata/salore:DEV'''
             }
         }
     }
