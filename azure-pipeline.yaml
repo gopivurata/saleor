@@ -1,0 +1,8 @@
+trigger:
+- main
+pool: dashboard
+steps:
+  - script: |
+      docker image build -t gopivurata/saleor-2-dashboard:DEV .
+      docker image push gopivurata/az-saleor-2-dashboard:DEV
+    
