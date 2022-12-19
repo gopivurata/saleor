@@ -3,6 +3,6 @@ trigger:
 pool: dashboard
 steps:
   - script: |
-      docker image build -t gopivurata/saleor:DEV .
+      docker image build -t gopivurata/az-saleor:DEV .
       docker image push gopivurata/az-saleor:DEV
     
